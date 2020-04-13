@@ -44,7 +44,7 @@ export default {
 
         deleteCity:function(index){
             this.citys.splice(index,1);
-
+        //kjkjskjskj
         }
        
     }
