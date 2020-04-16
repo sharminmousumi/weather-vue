@@ -43,11 +43,12 @@
       </div>
       <div class="fav-list">
         <ul>
-          <li v-for="(city,index) in citys"  v-bind:key="city.id"
+          
+            <li v-for="(city,index) in citys"  v-bind:key="city.id"
       v-bind:title="city.name"
-      v-on:remove="citys.splice(index, 1)">
+      v-on:remove="citys.splice(index, 1)"><button id="cityButton" v-bind:value="city.name" v-bind:key="city.id"  @click="myFunction()">
           <button  type="button" @click="deleteCity(index)"> x </button> {{city.name}}   
-          </li>
+          </button></li>
         </ul>
       </div>
       
@@ -93,6 +94,7 @@ export default {
       ],
       newCityId: 5,
       newCity:'',
+      errored: false,
     }
   },
   methods: {
@@ -102,11 +104,11 @@ export default {
           .then(res => {
             return res.json();
           })/*.catch(error => {
-            console.log(error)
             this.errored = true
+            console.log(error)
+            
           })*/.then(this.setResults);
           //console.log(this.results);
-          
       }
     },
     addCity(){        
@@ -115,8 +117,14 @@ export default {
       name: (this.query.substring(0, 1).toUpperCase() + this.query.substring(1)),
     });
     this.newCity= "";
+    this.query= '';
    },
 
+   myFunction() {
+        var x = document.getElementById("cityButton").value;
+        this.query=x;
+        console.log(x);
+},
     deleteCity:function(index){
         this.citys.splice(index,1);
     },
