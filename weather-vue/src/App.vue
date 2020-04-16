@@ -1,7 +1,7 @@
 <template>
 <div>
   
-  <div id="app" :class="typeof weather.main != 'undefined' && weather.main.temp > 16 ? 'warm' : ''">
+  <div id="app" :class="typeof weather.main != 'undefined' && weather.main.temp > 12 ? 'warm' : ''">
      
     <main>
       
