@@ -281,6 +281,7 @@ main {
   font-size: 20px;
   font-style: italic; 
   flex-direction: row-reverse;
+  
 }
 button {
  background-color: white; 
@@ -307,6 +308,16 @@ button:hover {
 }
 #fav-button{
   justify-content: center;
+}
+#cityButton {
+  background-color:rgba(255, 255, 255, 0.25);
+  border: none;
+  border-radius: 12%; 
+  color: rgb(243, 196, 40);
+}
+#cityButton:hover {
+  background-color: rgb(243, 196, 40);
+  color: white;
 }
 @media only screen and (max-width: 740px) {
   .fav-list li{
