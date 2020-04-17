@@ -1,7 +1,7 @@
 <template>
 <div>
   
-  <div id="app" :class="typeof weather.main != 'undefined' && weather.main.temp > 12 ? 'warm' : ''">
+  <div id="app" :class="typeof weather.main != 'undefined' && weather.main.temp > 16 ? 'warm' : ''">
      
     <main>
       
@@ -46,7 +46,7 @@
           
             <li v-for="(city,index) in citys"  v-bind:key="city.id"
       v-bind:title="city.name"
-      v-on:remove="citys.splice(index, 1)"><button id="cityButton" v-bind:value="city.name" v-bind:key="city.id"  @click="myFunction()">
+      v-on:remove="citys.splice(index, 1)"><button id="cityButton"  v-bind:value="city.name" v-bind:key="city.id"  @click="myFunction()">
           <button  type="button" @click="deleteCity(index)"> x </button> {{city.name}}   
           </button></li>
         </ul>
@@ -305,6 +305,7 @@ button:hover {
 .fav-list li button{
   padding: 1px 2px;
   border-radius: 35%;
+  
 }
 #fav-button{
   justify-content: center;
@@ -312,8 +313,10 @@ button:hover {
 #cityButton {
   background-color:rgba(255, 255, 255, 0.25);
   border: none;
-  border-radius: 12%; 
+  border-radius: 7px; 
   color: rgb(243, 196, 40);
+  text-shadow: 1px 3px rgba(0, 0, 0, 0.25);
+  width: 100%;
 }
 #cityButton:hover {
   background-color: rgb(243, 196, 40);
