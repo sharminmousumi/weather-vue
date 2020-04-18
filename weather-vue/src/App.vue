@@ -158,14 +158,14 @@ export default {
 }
 
 body {
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'montserrat', sans-serif;
 }
 
 #app {
+  background-image: url('./assets/sunset.jpg');
   background-size:cover;
   background-position: bottom;
-  transition: 0.7s;
-  background-image: url('./assets/sunset.jpg');
+  transition: 0.4s;
 }
 
 #app.warm {
@@ -174,19 +174,19 @@ body {
 
 main {
   min-height: 100vh;
+  padding: 25px;
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(4,29%);
+  grid-template-rows: repeat(3,30%);
   justify-content: center;
-  background-image: linear-gradient(to bottom,black, black);
-  padding: 26px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75));
 }
 #clock{
   color: red;
   font-size: 30px;
-  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+  font-style: italic;
   text-align: center;
-  font-weight: 301;
 }
 .search-box {
   width: 100%;
