@@ -182,7 +182,7 @@ main {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75));
 }
 #clock{
-  color: rgb(243, 196, 40);
+  color: red;
   font-size: 30px;
   font-weight: 300;
   font-style: italic;
@@ -196,39 +196,39 @@ main {
 
 .search-box .search-bar {
   display: block;
-  width: 100%;
-  padding: 15px;
+  padding: 14px;
   color: #313131;
-  font-size: 20px;
+  font-size: 21px;
   appearance: none;
   border:none;
   outline: none;
   background: none;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 0px 16px 0px 16px;
+  box-shadow: 0px 0px 7px rgba(41, 6, 6, 0.25);
+  background-color: rgb(224, 180, 180);
+  border-radius: 10px 10px 10px 10px;
   transition: 0.4s;
+  width: 100%;
 }
 
 .search-box .search-bar:focus {
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 16px 0px 16px 0px;
+  box-shadow: 0px 0px 16px red;
+  background-color: rgb(224, 180, 180);
+  border-radius: 10px 10px 10px 10px;
 }
 
 .location-box .location {
-  color: rgb(243, 196, 40);
-  font-size: 32px;
-  font-weight: 500;
+  color: red;
   text-align: center;
-  text-shadow: 1px 3px rgba(0, 0, 0, 0.25);
+  text-shadow: 1px 3px red;
+  font-size: 31px;
+  font-weight: 490;
 }
 
 .location-box .date {
-  color: rgb(243, 196, 40);
-  font-size: 20px;
-  font-weight: 300;
-  font-style: italic;
+  color: red;
+  font-weight: 298;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
   text-align: center;
 }
 
@@ -237,78 +237,78 @@ main {
   grid-row: 2 / 4;
 }
 .weather-box {
-  text-align: center;
+  text-align:center;
 }
 
 .weather-box .temp {
+  box-shadow: 4px 5px black;
   display: inline-block;
   padding: 10px 25px;
-  color: rgb(243, 196, 40);
   font-size: 102px;
   font-weight: 900;
-  text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
-  background-color:rgba(255, 255, 255, 0.25);
-  border-radius: 24px;
-  margin: 30px 0px;
-  box-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+  text-shadow: 4px 7px black;
+  background-color:cyan;
+  margin: 31px 0px;
+  color: red;
+  border-radius: 26px;
+  
 }
 
 .weather-box .weather {
-  color: rgb(243, 196, 40);
-  font-size: 48px;
   font-weight: 700;
-  font-style: italic;
-  text-shadow: 3px 6px rgba(0, 0, 0, 0.25);
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 3px 6px rgba(145, 89, 89, 0.25);
+  color:red;
+  font-size: 38px;
 }
 
 .fav-list{
-  
-  grid-column: 4 / 5;
-  grid-row: 2 / 4;
-  color: rgb(243, 196, 40);
-  text-shadow: 2px 4px rgba(0, 0, 0, 0.25);
-  background-color:rgba(255, 255, 255, 0.25);
-  border-radius: 16px;
+  bottom: 11px;
+  color:red;
+  text-shadow: 2px 4px black;
+  background-color:rgba(105, 61, 61, 0.25);
+  border-radius: 15px;
   list-style: none;
 	padding: 20px;
   width: 100%;
-  bottom: 10px;
+  grid-column: 4 / 5;
+  grid-row: 2 / 4;
 }
 
 .fav-list li{
-  list-style: none;
-  margin: 7px;
   font-size: 20px;
-  font-style: italic; 
+  font-family: 'Times New Roman', Times, serif; 
+   margin: 7px;
   flex-direction: row-reverse;
-  
+  list-style: none;
 }
 button {
- background-color: white; 
-  color: black; 
-  border: 2px solid rgb(243, 196, 40);
-  border-radius: 7px;
-  padding: 8px 16px;
-  text-align: center;
+ background-color: rgb(243, 212, 212); 
+  color: rgb(167, 60, 60); 
+  border: 3px solid cadetblue;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 17px;
+  margin: 5px 3px;
   transition-duration: 0.4s;
   cursor: pointer;
+  padding: 9px 15px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 button:hover {
-  background-color: rgb(243, 196, 40);
-  color: white;
+  background-color:red;
+  color:yellowgreen;
 }
 .fav-list li button{
   padding: 1px 2px;
   border-radius: 35%;
-  
+  padding: 2px 3px;
+  border-radius: 30%;
 }
 #fav-button{
-  justify-content: center;
+  justify-content: right;
 }
 #cityButton {
   background-color:rgba(255, 255, 255, 0.25);
@@ -325,15 +325,15 @@ button:hover {
 @media only screen and (max-width: 740px) {
   .fav-list li{
   list-style: none;
-  margin: 7px;
-  font-size: 15px;
-  font-style: italic;
+  margin: 5px;
+  font-family:'Times New Roman', Times, serif;
   text-align: center;
+  font-size: 15px;
   } 
   .fav-list li button{
-  padding: 1px 2px;
-  border-radius: 5%;
+  padding: 2px 2px;
   width: 100%;
+  border-radius: 8%;
 }
 .fav-list{
   flex-direction: column-reverse;
