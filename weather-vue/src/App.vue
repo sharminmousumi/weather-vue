@@ -302,25 +302,11 @@ button:hover {
   color:yellowgreen;
 }
 .fav-list li button{
-  padding: 1px 2px;
-  border-radius: 35%;
   padding: 2px 3px;
   border-radius: 30%;
 }
 #fav-button{
   justify-content: right;
-}
-#cityButton {
-  background-color:rgba(255, 255, 255, 0.25);
-  border: none;
-  border-radius: 7px; 
-  color: rgb(243, 196, 40);
-  text-shadow: 1px 3px rgba(0, 0, 0, 0.25);
-  width: 100%;
-}
-#cityButton:hover {
-  background-color: rgb(243, 196, 40);
-  color: white;
 }
 @media only screen and (max-width: 740px) {
   .fav-list li{
