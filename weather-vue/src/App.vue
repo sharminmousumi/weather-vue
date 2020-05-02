@@ -46,7 +46,7 @@
           
             <li v-for="(city,index) in citys"  v-bind:key="city.id"
       v-bind:title="city.name"
-      v-on:remove="citys.splice(index, 1)"><button id="cityButton"  v-bind:value="city.name" v-bind:key="city.id"  @click="myFunction()">
+      v-on:remove="citys.splice(index, 1)"><button id="cityButton" v-bind:value="city.name" v-bind:key="city.id"  @click="myFunction()">
           <button  type="button" @click="deleteCity(index)"> x </button> {{city.name}}   
           </button></li>
         </ul>
